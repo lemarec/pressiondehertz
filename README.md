@@ -32,17 +32,20 @@ La méthode conseillés officiellement et qui permet une installation rapide et 
 	7. – Lancer hello.py par python3 hello.py
 
 Scrypt de hello.py :
+```python
+    import gi  
+    gi.require_version("Gtk", "3.0")  
+    from gi.repository import Gtk  
 
-    import gi
-	gi.require_version("Gtk", "3.0")
-	from gi.repository import Gtk
-
-	window = Gtk.Window(title="Hello World")
-	window.show()
-	window.connect("destroy", Gtk.main_quit)
-	Gtk.main()
+    window = Gtk.Window(title="Hello World")  
+    window.show()  
+    window.connect("destroy", Gtk.main_quit)  
+    Gtk.main()
+```
 
 ### Glade
 
 Vous pouvez téléchager Glade [ici](https://glade.gnome.org "Site Internet de Glade") <br>
 (seulement pour réaliser des modifications sur l'interface)
+
+
